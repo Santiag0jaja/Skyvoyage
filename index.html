@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVoyage - Explore Europe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>SkyVoyage</h1>
+            <p>Explore Europe with exclusive travel deals and weather insights</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SkyVoyage</div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#forecast"><i class="fas fa-cloud-sun"></i> Weather</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="section-content">
+                <h2>About SkyVoyage</h2>
+                <p>Your trusted European travel agency offering exclusive destinations, personalized tours, and 24/7 customer service. Discover Europe with us!</p>
+            </div>
+        </section>
+
+        <section>
+        <div class="service">
+            <div class="emoji-pin-container">
+                <img src="assets/img/service.jpg" alt="Exclusive Deals" class="emoji-pin" loading="lazy">
+            </div>
+            <div class="service-info">
+                <h3>Exclusive Flight Deals</h3>
+                <p>Find the best flight deals to top European destinations. Save more by booking early and enjoy personalized service with SkyVoyage.</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="forecast">
+            <div class="section-content">
+                <h2>Check the Weather</h2>
+                <div class="weather-form">
+                    <label for="city">Select a European city:</label>
+                    <select id="city">
+                        <option value="Berlin">Berlin</option>
+                        <option value="Paris">Paris</option>
+                        <option value="London">London</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Vienna">Vienna</option>
+                        <option value="Prague">Prague</option>
+                        <option value="Lisbon">Lisbon</option>
+                        <option value="Brussels">Brussels</option>
+                    </select>
+                    <button id="weather-btn">Get Forecast</button>
+
+                    <div id="weather-result" style="display: none;">
+                        <h3>Weather Forecast for <span id="city-name"></span></h3>
+                        <div id="forecast-details"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Page made by: Santiago Diaz Echavarria</p>
+            <div class="social-links">
+                <a href="https://wa.me/573044740084" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:santiagodiazeo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
