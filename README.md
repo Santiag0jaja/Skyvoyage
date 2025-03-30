@@ -2,7 +2,7 @@
 
 **A dynamic travel companion delivering accurate 7-day weather forecasts for Europe’s top destinations, powered by modern web tech.**  
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome)](https://skyvoyage-demo.netlify.app) 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome)](https://santiag0jaja.github.io/Skyvoyage/) 
 [![API](https://img.shields.io/badge/🌦️_Weather_API-5C9E5D?style=for-the-badge)](https://openweathermap.org/api)  
 
 ---
