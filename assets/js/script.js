@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Funcion to hamburguer bottom, made by @CXRLL at github!
+function hamburgerfunc() {
+    var x = document.getElementById("hamburgerlinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  
 async function getWeather() {
     const city = document.getElementById('city').value;
     const resultDiv = document.getElementById('weather-result');

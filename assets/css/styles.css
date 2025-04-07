@@ -145,6 +145,14 @@ nav {
     padding: 10px;
 }
 
+#hamburgerlinks {
+    display: none;
+}
+
+#hamburgerlinks.show {
+    display: block;
+}
+
 /* Main Content Styles */
 main {
     max-width: 1200px;
