@@ -3,116 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyVoyage - Your premium European travel experience with weather insights">
     <title>SkyVoyage - Explore Europe</title>
-    <!-- Hi youuuu!-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="header-overlay"></div>
         <div class="header-content">
             <h1>SkyVoyage</h1>
-            <p>Explore Europe with exclusive travel deals and weather insights</p>
+            <p>Discover Europe with exclusive travel deals and real-time weather insights</p>
+            <a href="#services" class="cta-button">Explore Deals</a>
         </div>
     </header>
 
     <nav>
         <div class="nav-container">
             <div class="logo">SkyVoyage</div>
-
-            <button class="mobile-menu-btn" aria-label="Menu" onclick="hamburgerfunc()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div id="hamburgerlinks">
-                <ul class="nav-links">
-                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
-                    <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
-                    <li><a href="#forecast"><i class="fas fa-cloud-sun"></i> Weather</a></li>
-                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                </ul>
+            <div class="nav-links">
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#services"><i class="fas fa-concierge-bell"></i> Services</a>
+                <a href="#forecast"><i class="fas fa-cloud-sun"></i> Weather</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             </div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
     </nav>
 
     <main>
-        <section id="about">
+        <section id="about" class="fade-in">
             <div class="section-content">
                 <h2>About SkyVoyage</h2>
-                <p>Your trusted European travel agency offering exclusive destinations, personalized tours, and 24/7 customer service. Discover Europe with us!</p>
-            </div>
-        </section>
-
-        <section id="services" class="services">
-        <div class="service">
-            <div class="emoji-pin-container">
-                <img src="assets/img/service.jpg" alt="Exclusive Deals" class="emoji-pin" loading="lazy">
-            </div>
-            <div class="service-info">
-                <h3>Exclusive Flight Deals</h3>
-                <p>Find the best flight deals to top European destinations. Save more by booking early and enjoy personalized service with SkyVoyage.</p>
-            </div>
-        </div>
-        </section>
-
-        <section id="forecast">
-            <div class="section-content">
-                <h2>Check the Weather</h2>
-                <div class="weather-form">
-                    <label for="city">Select a European city:</label>
-                    <select id="city">
-                        <option value="Berlin">Berlin</option>
-                        <option value="Paris">Paris</option>
-                        <option value="London">London</option>
-                        <option value="Rome">Rome</option>
-                        <option value="Madrid">Madrid</option>
-                        <option value="Amsterdam">Amsterdam</option>
-                        <option value="Vienna">Vienna</option>
-                        <option value="Prague">Prague</option>
-                        <option value="Lisbon">Lisbon</option>
-                        <option value="Brussels">Brussels</option>
-                    </select>
-                    <button id="weather-btn">Get Forecast</button>
-
-                    <div id="weather-result" style="display: none;">
-                        <h3>Weather Forecast for <span id="city-name"></span></h3>
-                        <div id="forecast-details"></div>
+                <p>Your trusted European travel companion offering exclusive destinations, personalized tours, and 24/7 customer support. We combine travel expertise with real-time weather data to ensure your European adventure is perfect in every way.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Happy Travelers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="120">0</div>
+                        <div class="stat-label">Destinations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Support Hours</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-form">
+        <section id="services" class="fade-in">
+            <div class="section-content">
+                <h2>Our Services</h2>
+                <p class="section-subtitle">We offer comprehensive travel solutions to make your European journey unforgettable</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Flight Deals</h3>
+                        <p>Exclusive flight packages to top European destinations with flexible booking options.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Hotel Packages</h3>
+                        <p>Curated accommodations from boutique hotels to luxury resorts.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <h3>Tour Packages</h3>
+                        <p>Customized tours that showcase Europe's rich culture and hidden gems.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-sun-rain"></i>
+                        </div>
+                        <h3>Weather Insights</h3>
+                        <p>Real-time weather forecasts to help you plan your activities perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="forecast" class="fade-in">
+            <div class="section-content">
+                <h2>Weather Forecast</h2>
+                <p class="section-subtitle">Check the weather for your European destination to plan your perfect trip</p>
+                
+                <div class="weather-container">
+                    <div class="weather-form">
+                        <div class="select-wrapper">
+                            <select id="city" class="styled-select">
+                                <option value="" disabled selected>Select a city</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="Paris">Paris</option>
+                                <option value="London">London</option>
+                                <option value="Rome">Rome</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Amsterdam">Amsterdam</option>
+                                <option value="Vienna">Vienna</option>
+                                <option value="Prague">Prague</option>
+                                <option value="Lisbon">Lisbon</option>
+                                <option value="Brussels">Brussels</option>
+                            </select>
+                        </div>
+                        <button id="weather-btn" class="primary-btn">
+                            <i class="fas fa-search-location"></i> Get Forecast
+                        </button>
+                    </div>
+
+                    <div id="weather-result" class="weather-result">
+                        <div class="current-weather" id="current-weather" style="display: none;">
+                            <h3>Current Weather in <span id="city-name"></span></h3>
+                            <div class="weather-main">
+                                <div class="weather-icon-container">
+                                    <img id="weather-icon" src="" alt="Weather Icon">
+                                </div>
+                                <div class="weather-temp" id="weather-temp"></div>
+                            </div>
+                            <div class="weather-details">
+                                <div class="weather-desc" id="weather-desc"></div>
+                                <div class="weather-info">
+                                    <div><i class="fas fa-temperature-low"></i> Feels like: <span id="feels-like"></span></div>
+                                    <div><i class="fas fa-wind"></i> Wind: <span id="wind-speed"></span></div>
+                                    <div><i class="fas fa-tint"></i> Humidity: <span id="humidity"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forecast-container" id="forecast-details"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
             <div class="section-content">
                 <h2>Contact Us</h2>
-                <form id="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
+                <p class="section-subtitle">Have questions? Get in touch with our travel experts</p>
+                
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="primary-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Travel Street, London, UK</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+44 20 1234 5678</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@skyvoyage.com</span>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 - 18:00</p>
+                            <p>Saturday: 10:00 - 16:00</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>Page made by: Santiago Diaz Echavarria</p>
-            <div class="social-links">
-                <a href="https://wa.me/573044740084" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:santiagodiazeo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div class="footer-section">
+                <h3>SkyVoyage</h3>
+                <p>Your trusted partner for European travel experiences with integrated weather insights.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#forecast">Weather Forecast</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get travel deals and weather updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="secondary-btn">Subscribe</button>
+                </form>
             </div>
         </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 SkyVoyage. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Santiago Diaz Echavarria</p>
+        </div>
     </footer>
+
+    <a href="#" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="assets/js/script.js"></script>
 </body>
